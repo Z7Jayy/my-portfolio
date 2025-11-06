@@ -1,8 +1,8 @@
 // src/components/ClientLayout.tsx
 'use client';
 import { motion } from 'framer-motion';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './common/Navbar';
+import Footer from './common/Footer';
 import Analytics from '../app/analytics';
 
 export default function ClientLayout({
