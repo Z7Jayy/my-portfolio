@@ -10,7 +10,6 @@ import AboutSection from '@/components/sections/AboutSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import ExperienceSection from '@/components/sections/ExperienceSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 
 // ✅ Home Page Component

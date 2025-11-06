@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import ProjectCard from '../ProjectCard';
 import { projects } from '@/data/projects';
-import { h2 } from 'framer-motion/client';
 
 export default function ProjectsSection() {
     return (
