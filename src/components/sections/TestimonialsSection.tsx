@@ -76,9 +76,9 @@ export default function TestimonialsSection() {
                                     </span>
                                 </div>
 
-                                {/* Review Text */}
+                                {/* Review Text - FIX APPLIED HERE */}
                                 <p className="text-gray-300 text-sm leading-relaxed italic">
-                                    "{testimonial.text}"
+                                    &quot;{testimonial.text}&quot;
                                 </p>
 
                                 {/* Hover Effect Background */}

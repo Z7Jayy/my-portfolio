@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image'; // <-- ADDED for image optimization
 
 export default function HeroSection() {
     return (
@@ -16,9 +17,12 @@ export default function HeroSection() {
                         whileHover={{ scale: 1.02 }}
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
-                        <img
+                        <Image // <-- CHANGED to <Image />
                             src="/JRCODED.png"
                             alt="JRCoded Logo"
+                            width={1000} // Define width
+                            height={300} // Define height
+                            priority={true}
                             className="inline-block w-4/5 max-w-3xl h-auto mx-auto"
                         />
                     </motion.h1>
@@ -68,7 +72,7 @@ export default function HeroSection() {
                             href="#contact"
                             className="shimmer-button px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gray-200 to-gray-400 rounded-full font-semibold shadow-lg text-gray-900 hover:shadow-white/40 transition-all text-center text-sm sm:text-base relative z-10"
                         >
-                            Let's Connect
+                            Let&apos;s Connect {/* <-- FIXED: Used &apos; instead of ' */}
                         </motion.a>
                         <motion.a
                             whileHover={{ scale: 1.05 }}
