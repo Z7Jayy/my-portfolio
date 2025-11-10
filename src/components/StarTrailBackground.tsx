@@ -27,7 +27,7 @@ export default function StarTrailBackground() {
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: 'url("/background.jpg")',
+                    backgroundImage: 'url("/1A5F72B6-E367-4061-AF21-C5FD6A9E8BBE_1_201_a.jpeg")',
                     filter: 'brightness(0.4)',
                 }}
             />
