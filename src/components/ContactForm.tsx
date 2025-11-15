@@ -109,7 +109,7 @@ export default function ContactForm() {
                     <p className="text-green-400 font-semibold">Available for new projects</p>
                 </div>
                 <p className="text-gray-300 text-lg">
-                    Feel free to reach out through any of these methods. I respond within 24 hours.
+                    Feel free to reach out through any of these methods.
                 </p>
                 <p className="text-gray-400 text-sm mt-2">
                     Preferred contact: Email or Instagram
@@ -130,7 +130,7 @@ export default function ContactForm() {
                     whileTap={{ scale: 0.95 }}
                     className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full font-semibold text-white hover:from-blue-500 hover:to-blue-600 transition-all shadow-lg hover:shadow-blue-500/25 text-center"
                 >
-                    📧 Send Quick Email
+                    Quick Email
                 </motion.a>
 
                 <motion.a
