@@ -22,7 +22,7 @@ export default function ContactSection() {
                     transition={{ delay: 0.2 }}
                     className="text-xl text-gray-400 mb-12 text-center px-4"
                 >
-                    Is there a project you're thinking of starting?
+                    Is there a project you&apos;re thinking of starting?
                 </motion.p>
 
                 <ContactForm />
