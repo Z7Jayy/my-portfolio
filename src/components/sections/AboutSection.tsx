@@ -47,11 +47,11 @@ export default function AboutSection() {
                         <div className="space-y-4">
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-400">Projects Completed</span>
-                                <span className="text-2xl font-bold text-gray-200">10+</span>
+                                <span className="text-2xl font-bold text-gray-200">5+</span>
                             </div>
                             <div className="flex justify-between items-center">
-                                <span className="text-gray-400">Technologies Mastered</span>
-                                <span className="text-2xl font-bold text-gray-200">15+</span>
+                                <span className="text-gray-400">Technologies Learned</span>
+                                <span className="text-2xl font-bold text-gray-200">10+</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-400">Years of Experience</span>
