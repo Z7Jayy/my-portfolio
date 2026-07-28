@@ -36,7 +36,7 @@ export const projects = [
         description: "Web-based digital dominoes gaming platform featuring custom gameplay animations and multiplayer room synchronization.",
         technologies: ["React", "Colyseus", "Node.js"],
         githubLink: "#",
-        liveLink: "z7dominoes.vercel.app",
+        liveLink: "https://z7dominoes.vercel.app",
         imageUrl: "/dominoes.jpg",
     },
     {
