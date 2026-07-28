@@ -8,12 +8,12 @@ export const projects = [
         imageUrl: "/img.png",
     },
     {
-        title: "Cafe Ordering Mobile Application",
-        description: "Mobile app for cafes allowing users to browse menus, place orders, and give feedback with real-time data syncing.",
-        technologies: ["Kotlin", "Jetpack Compose", "Firebase"],
+        title: "The 411",
+        description: "Mobile application contracted by the university focusing on drug awareness information and sobriety tracking.(Not Yet Launched)",
+        technologies: ["Flutter", "Dart", "Firebase"],
         githubLink: "#",
-        liveLink: "https://www.linkedin.com/feed/update/urn:li:activity:7365888565337067521",
-        imageUrl: "/cafe-app.jpg",
+        liveLink: "#",
+        imageUrl: "/the-411.jpg",
     },
     {
         title: "Smart IoT Intrusion Detection",
@@ -31,4 +31,20 @@ export const projects = [
         liveLink: "https://holistechwellness.com",
         imageUrl: "/holistech-wellness-screenshot.jpg",
     },
+    {
+        title: "Multiplayer Digital Dominoes",
+        description: "Web-based digital dominoes gaming platform featuring custom gameplay animations and multiplayer room synchronization.",
+        technologies: ["React", "Colyseus", "Node.js"],
+        githubLink: "#",
+        liveLink: "z7dominoes.vercel.app",
+        imageUrl: "/dominoes.jpg",
+    },
+    {
+        title: "Bundle Madness E-Commerce",
+        description: "Full-stack e-commerce storefront for hair bundles, featuring seamless checkout and payment processing.",
+        technologies: ["React", "Stripe", "Node.js"],
+        githubLink: "#",
+        liveLink: "https://bundlemadnesshair.com",
+        imageUrl: "/bundle-madness.jpg",
+    }
 ];
