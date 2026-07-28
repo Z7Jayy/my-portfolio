@@ -64,6 +64,39 @@ export default function Experience() {
                         </ul>
                     </div>
 
+                    {/* The 411 */}
+                    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h4 className="text-xl font-bold">The 411 App (University Contract)</h4>
+                        <p className="text-sm text-blue-500 dark:text-blue-400 font-mono mt-1">Tech: Flutter, Dart, Firebase</p>
+                        <ul className="list-disc pl-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>Contracted by the university to develop a mobile application focused on drug awareness and education.</li>
+                            <li>Implemented comprehensive sobriety tracking features to support end-users.</li>
+                            <li>Built a responsive, cross-platform UI using Flutter and Dart, with Firebase for secure data management.</li>
+                        </ul>
+                    </div>
+
+                    {/* Bundle Madness E-Commerce */}
+                    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h4 className="text-xl font-bold">Bundle Madness E-Commerce</h4>
+                        <p className="text-sm text-blue-500 dark:text-blue-400 font-mono mt-1">Tech: React, Stripe, Node.js</p>
+                        <ul className="list-disc pl-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>Developed a full-stack e-commerce storefront for hair bundles at bundlemadnesshair.com.</li>
+                            <li>Integrated Stripe configuration for secure, seamless checkout and payment processing.</li>
+                            <li>Built a dynamic and responsive React frontend for optimal product browsing and user experience.</li>
+                        </ul>
+                    </div>
+
+                    {/* Multiplayer Digital Dominoes */}
+                    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                        <h4 className="text-xl font-bold">Multiplayer Digital Dominoes</h4>
+                        <p className="text-sm text-blue-500 dark:text-blue-400 font-mono mt-1">Tech: React, Colyseus, Node.js</p>
+                        <ul className="list-disc pl-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>Engineered a web-based digital dominoes gaming platform utilizing React state hooks.</li>
+                            <li>Integrated Colyseus servers to synchronize multiplayer game rooms and manage real-time player states.</li>
+                            <li>Developed custom gameplay animations for an immersive user experience.</li>
+                        </ul>
+                    </div>
+
                     {/* Smart IoT Intrusion Detection and Alert */}
                     <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
                         <h4 className="text-xl font-bold">Smart IoT Intrusion Detection and Alert</h4>
@@ -72,16 +105,6 @@ export default function Experience() {
                             <li>Built a **real-time IoT home security system** using motion and IR sensors, buzzers, and LCD displays.</li>
                             <li>Integrated mobile app notifications and remote control via Blynk for real-time monitoring.</li>
                             <li>Enabled power-efficient operation through sleep modes and implemented sensor fusion for accurate threat detection.</li>
-                        </ul>
-                    </div>
-
-                    {/* Cafe Ordering Mobile Application */}
-                    <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                        <h4 className="text-xl font-bold">Cafe Ordering Mobile Application</h4>
-                        <p className="text-sm text-blue-500 dark:text-blue-400 font-mono mt-1">Tech: Kotlin, Jetpack Compose, Firebase Realtime Database</p>
-                        <ul className="list-disc pl-5 mt-3 space-y-2 text-gray-700 dark:text-gray-300">
-                            <li>Developed a mobile app for local cafes enabling users to browse menus, place orders, and submit feedback.</li>
-                            <li>Designed intuitive UIs with real-time menu and order data syncing via Firebase.</li>
                         </ul>
                     </div>
 
