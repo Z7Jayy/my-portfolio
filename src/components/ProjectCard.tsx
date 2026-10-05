@@ -10,6 +10,7 @@ interface Project {
     githubLink: string;
     liveLink: string;
     imageUrl: string;
+    videoUrl?: string; // Added optional video property
     metrics?: {
         [key: string]: string;
     };
@@ -25,16 +26,30 @@ export default function ProjectCard({ project }: { project: Project }) {
             whileHover={{ y: -8, boxShadow: '0 0 50px rgba(255,255,255,0.15)' }}
             className="glow-card group relative rounded-lg overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 flex flex-col h-full"
         >
-            {/* Image Container with Fixed Aspect Ratio */}
-            <div className="relative w-full h-48 overflow-hidden">
-                <Image
-                    src={project.imageUrl}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/80" />
+            {/* Media Container (Video or Image) */}
+            <div className="relative w-full h-48 overflow-hidden bg-black">
+                {project.videoUrl ? (
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90 hover:opacity-100"
+                    >
+                        <source src={project.videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
+                    <Image
+                        src={project.imageUrl}
+                        alt={project.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                )}
+
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/80 pointer-events-none" />
 
                 {/* Live Project Metrics Overlay */}
                 {project.metrics && (
@@ -69,7 +84,6 @@ export default function ProjectCard({ project }: { project: Project }) {
                 </div>
 
                 <div className="flex gap-4 mt-auto">
-
                     <motion.a
                         whileHover={{ scale: 1.05, textShadow: '0 0 10px rgba(59,130,246,0.8)' }}
                         href={project.liveLink}
