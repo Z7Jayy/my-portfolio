@@ -4,8 +4,9 @@ export const projects = [
         description: "Cross-platform financial management application featuring real-time expense tracking, AI-powered budget analysis, and interactive financial trivia games.",
         technologies: ["Flutter", "Dart", "Firebase", "TensorFlow Lite", "Plaid API"],
         githubLink: "#",
-        liveLink: "#",
+        liveLink: "https://youtu.be/tE_Fi5dUeL8",
         imageUrl: "/img.png",
+        videoUrl: "/videos/xfinance-walkthrough.mp4", // Add your compressed MP4 path here
     },
     {
         title: "The 411",
