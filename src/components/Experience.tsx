@@ -36,6 +36,26 @@ export default function Experience() {
                     </div>
                 </div>
 
+                {/* Work Experience Section */}
+                <div className="border-l-4 border-green-500 pl-6">
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">Work Experience</h3>
+
+                    <div className="mb-8">
+                        <h4 className="text-xl font-bold text-green-700 dark:text-green-400">Graduate Software Engineer</h4>
+                        <p className="text-lg font-semibold text-gray-800 dark:text-gray-200">Legal-Pythia LLP</p>
+                        <p className="text-gray-600 dark:text-gray-300">Aug 2026 – Present</p>
+
+                        <ul className="list-disc pl-5 mt-4 space-y-2 text-gray-700 dark:text-gray-300">
+                            <li>Contributed to a fintech SaaS platform as part of a client engagement, working across backend (AWS, GraphQL, DynamoDB) and frontend (Next.js/React).</li>
+                            <li>Designed and built a multi-user team system from scratch, including role-based permissions (owner, admin, member), two separate onboarding paths for existing and new users, and a shared-data layer allowing team members to work off one underlying dataset without duplication.</li>
+                            <li>Built a migration path so existing accounts moved into the new permissions model automatically, without disrupting current users.</li>
+                            <li>Added member removal, role promotion/demotion, and a fully responsive team management interface.</li>
+                            <li>Redesigned a subscription-management form, merging a two-step flow into one and adding debounced search.</li>
+                            <li>Diagnosed and resolved production authorization and race-condition bugs using cloud logs and identity tooling.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 {/* Technical Projects Section */}
                 <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6">Key Technical Projects</h3>
 
