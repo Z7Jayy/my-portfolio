@@ -18,7 +18,8 @@ export default function PrivacyPage() {
                 <strong className="font-semibold text-white">The short version:</strong> Day 1
                 Club doesn’t collect your personal data. There’s no account, and everything you
                 track is stored only on your phone. We never see it, and it’s never sold or
-                shared.
+                shared. The only thing that ever leaves your phone is an anonymous crash report
+                if the app breaks, so we can fix it.
             </Card>
 
             <Section title="Who we are">
@@ -57,9 +58,24 @@ export default function PrivacyPage() {
                         'No accounts or sign-in',
                         'No analytics, advertising or tracking',
                         'No selling or sharing of data',
-                        'No third-party services in the app that collect your data',
+                        'Nothing you track or type is ever sent anywhere',
                     ]}
                 />
+            </Section>
+
+            <Section title="Crash reports">
+                <p>
+                    If Day 1 Club crashes or hits an error, it sends a crash report to Sentry
+                    (Functional Software, Inc.), the service we use to find and fix bugs. A report
+                    contains technical details only: what went wrong and where in the app, the app
+                    version, and your phone’s model and operating system version.
+                </p>
+                <p>
+                    It never includes your streaks, their names, your notes or anything else you’ve
+                    entered. It isn’t linked to you, and we’ve set it up not to store your IP
+                    address. Reports are stored in the EU and deleted automatically after a limited
+                    time.
+                </p>
             </Section>
 
             <Section title="Notifications">
