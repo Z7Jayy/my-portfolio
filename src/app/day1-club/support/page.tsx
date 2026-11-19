@@ -22,7 +22,7 @@ const faqs: { q: string; a: React.ReactNode }[] = [
     },
     {
         q: 'What’s the daily tap-in?',
-        a: 'A quick daily check-in: hold the button to log that you’re still going. It builds its own streak and keeps you in the habit of showing up.',
+        a: 'A quick daily check-in: hold the button to log that you’re still going. The app counts how many days in a row you’ve checked in, which keeps you in the habit of showing up. It’s separate from your streak, which is your days clean.',
     },
     {
         q: 'How do goals work?',
