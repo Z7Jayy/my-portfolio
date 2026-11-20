@@ -7,6 +7,78 @@ export const metadata: Metadata = {
     description: 'Help with Day 1 Club, plus free support lines.',
 };
 
+type Line = { name: string; detail: string; phone?: string; url?: string };
+
+// Same lines as the app (lib/domain/support_lines.dart). Checked November 2026.
+const helplines: { country: string; emergency: string; lines: Line[] }[] = [
+    {
+        country: 'United Kingdom',
+        emergency: '999',
+        lines: [
+            { name: 'FRANK', detail: 'Drugs advice · open 24/7', phone: '0300 123 6600' },
+            {
+                name: 'Drinkline',
+                detail: 'Alcohol advice (England) · weekdays 9am–8pm, weekends 11am–4pm',
+                phone: '0300 123 1110',
+            },
+        ],
+    },
+    {
+        country: 'United States',
+        emergency: '911',
+        lines: [
+            {
+                name: 'SAMHSA National Helpline',
+                detail: 'Free, confidential treatment referral · open 24/7',
+                phone: '1-800-662-4357',
+            },
+            {
+                name: '988 Lifeline',
+                detail: 'Call or text 988 · alcohol and drug concerns too · open 24/7',
+                phone: '988',
+            },
+        ],
+    },
+    {
+        country: 'Canada',
+        emergency: '911',
+        lines: [
+            {
+                name: 'Health Canada',
+                detail: 'Helplines and services across Canada',
+                url: 'https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html',
+            },
+            {
+                name: '9-8-8 Suicide Crisis Helpline',
+                detail: 'Call or text 9-8-8 if you’re in crisis · open 24/7',
+                phone: '988',
+            },
+        ],
+    },
+    {
+        country: 'Australia',
+        emergency: '000',
+        lines: [
+            {
+                name: 'National Alcohol and Other Drug Hotline',
+                detail: 'Free, confidential · open 24/7',
+                phone: '1800 250 015',
+            },
+        ],
+    },
+    {
+        country: 'New Zealand',
+        emergency: '111',
+        lines: [
+            {
+                name: 'Alcohol Drug Helpline',
+                detail: 'Free, confidential · open 24/7',
+                phone: '0800 787 797',
+            },
+        ],
+    },
+];
+
 const faqs: { q: string; a: React.ReactNode }[] = [
     {
         q: 'Is my data private?',
@@ -77,31 +149,64 @@ export default function SupportPage() {
             </Section>
 
             <Section title="Need to talk to someone?">
-                <p>These services are free and confidential:</p>
-                <div className="grid gap-3 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                        <p className="font-medium text-white">FRANK</p>
-                        <p className="text-sm text-white/50">Drugs advice · open 24/7</p>
-                        <a href="tel:03001236600" className="mt-2 block font-semibold text-[#7CF29C]">
-                            0300 123 6600
-                        </a>
-                    </div>
-                    <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                        <p className="font-medium text-white">Drinkline</p>
-                        <p className="text-sm text-white/50">
-                            Alcohol advice (England) · weekdays 9am–8pm, weekends 11am–4pm
-                        </p>
-                        <a href="tel:03001231110" className="mt-2 block font-semibold text-[#7CF29C]">
-                            0300 123 1110
-                        </a>
-                    </div>
+                <p>
+                    These services are free and confidential. The app shows the ones for your
+                    country in Settings → Support.
+                </p>
+                <div className="space-y-6">
+                    {helplines.map(({ country, emergency, lines }) => (
+                        <div key={country}>
+                            <p className="mb-2 text-sm font-semibold text-white">
+                                {country}{' '}
+                                <span className="font-normal text-white/50">
+                                    · emergency {emergency}
+                                </span>
+                            </p>
+                            <div className="grid gap-3 sm:grid-cols-2">
+                                {lines.map(({ name, detail, phone, url }) => (
+                                    <div
+                                        key={name}
+                                        className="rounded-2xl border border-white/10 bg-white/[0.03] p-4"
+                                    >
+                                        <p className="font-medium text-white">{name}</p>
+                                        <p className="text-sm text-white/50">{detail}</p>
+                                        {phone ? (
+                                            <a
+                                                href={`tel:${phone.replace(/[^0-9+]/g, '')}`}
+                                                className="mt-2 block font-semibold text-[#7CF29C]"
+                                            >
+                                                {phone}
+                                            </a>
+                                        ) : (
+                                            <a
+                                                href={url}
+                                                className="mt-2 block font-semibold text-[#7CF29C] hover:underline"
+                                            >
+                                                Visit website
+                                            </a>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                <p>In an emergency, call 999 or your local emergency number.</p>
+                <p>
+                    Somewhere else?{' '}
+                    <a
+                        href="https://findahelpline.com/topics/substance-use"
+                        className="text-[#7CF29C] hover:underline"
+                    >
+                        Find a Helpline
+                    </a>{' '}
+                    lists free drug and alcohol support in every country. In an emergency, call
+                    your local emergency number.
+                </p>
             </Section>
 
             <Card>
                 <strong className="font-semibold text-white">Stopping drinking safely:</strong> if
-                you drink heavily most days, stopping suddenly can be dangerous. Speak to your GP
+                you drink heavily most days, stopping suddenly can be dangerous. Speak to a doctor
                 or a local alcohol service before you stop.
             </Card>
 
