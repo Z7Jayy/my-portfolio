@@ -105,6 +105,18 @@ const faqs: { q: string; a: React.ReactNode }[] = [
         a: 'The app takes on the colours of your main streak. With more than one, it uses your longest-running streak, or the one you choose with “Make main streak” in the ••• menu.',
     },
     {
+        q: 'What’s in Day 1 Club Plus?',
+        a: 'Unlimited streaks, themes, alternate app icons and home-screen widgets. The free version includes one active streak and everything else.',
+    },
+    {
+        q: 'I bought Plus but it isn’t showing',
+        a: 'Open Settings in the app and tap Restore purchases, using the same Apple ID you bought it with. If that doesn’t work, email us and we’ll sort it.',
+    },
+    {
+        q: 'How do I cancel my subscription?',
+        a: 'On iPhone, open the Settings app, tap your name, then Subscriptions and Day 1 Club. You keep Plus until the end of the period you’ve paid for.',
+    },
+    {
         q: 'How do I delete my data?',
         a: 'Go to Settings → Erase all data, or delete the app. Nothing is stored anywhere else.',
     },
