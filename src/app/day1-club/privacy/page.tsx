@@ -12,14 +12,14 @@ export default function PrivacyPage() {
         <article>
             <Eyebrow>Day 1 Club</Eyebrow>
             <Title>Privacy Policy</Title>
-            <Updated date="18 November 2026" />
+            <Updated date="20 November 2026" />
 
             <Card>
                 <strong className="font-semibold text-white">The short version:</strong> Day 1
                 Club doesn’t collect your personal data. There’s no account, and everything you
                 track is stored only on your phone. We never see it, and it’s never sold or
-                shared. The only thing that ever leaves your phone is an anonymous crash report
-                if the app breaks, so we can fix it.
+                shared. The only things that ever leave your phone are an anonymous crash report
+                if the app breaks, and, if you buy Plus, an anonymous record of that purchase.
             </Card>
 
             <Section title="Who we are">
@@ -95,9 +95,16 @@ export default function PrivacyPage() {
 
             <Section title="Purchases">
                 <p>
-                    Any in-app purchases are processed by Apple (App Store) or Google (Google
-                    Play). We never receive your payment details. If we add a service to manage
-                    subscriptions in future, we’ll update this policy before it’s used.
+                    Day 1 Club Plus is an optional subscription or one-off purchase. Payments are
+                    handled by Apple (App Store) or Google (Google Play). We never see your card
+                    or payment details.
+                </p>
+                <p>
+                    To check what you’ve bought and unlock Plus, the app uses RevenueCat, a
+                    purchase-management service. RevenueCat receives your purchase history (which
+                    plan, when, and whether it’s active) with a random ID created by the app. It
+                    isn’t linked to your name, email or Apple ID, and it never includes anything
+                    you track in the app.
                 </p>
             </Section>
 
